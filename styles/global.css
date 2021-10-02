@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components {
+  .header-p {
+    @apply cursor-pointer text-xs font-bold;
+  }
+  .header-p-mobile {
+    @apply cursor-pointer text-xs font-semibold;
+  }
+}
