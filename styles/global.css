@@ -7,4 +7,7 @@
   .header-p-mobile {
     @apply cursor-pointer text-xs font-semibold;
   }
+  .contact-input {
+    @apply flex-grow py-2 px-6 lg:px-8 rounded-md shadow-md outline-none text-sm text-gray-400 placeholder-gray-400;
+  }
 }

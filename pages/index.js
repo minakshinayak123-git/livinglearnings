@@ -137,7 +137,7 @@ export default function Home({ placeholder }) {
       <main className='max-width-7xl mx-auto px-2 md:px-8 cursor-pointer bg-white shadow-lg md:shadow-2xl'>
         <section className='pt-6'>
           <div className='flex flex-col items-center text-center hover:scale-95 transform transition duration:300 easy-in-out'>
-            <h1 className='text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800'>
+            <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800'>
               Products
             </h1>
           </div>
@@ -214,7 +214,7 @@ export default function Home({ placeholder }) {
         </section>
         <section className='pt-4 bg-[#f5f8fd] rounded-md hover:scale-103 transform transition duration:300 easy-in-out '>
           <div className='flex flex-col items-center text-center bg-[f5f5f5] mb-8 '>
-            <h1 className='text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
+            <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
               Services
             </h1>
             <div className='flex flex-wrap mx-auto'>
@@ -237,7 +237,7 @@ export default function Home({ placeholder }) {
         </section>
         <section className='pt-4rounded-md hover:scale-103 transform transition duration:300 easy-in-out '>
           <div className='flex flex-col items-center text-center mb-4 lg:mb-8'>
-            <h1 className='text-lg md:text-xl lg:text-2xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
+            <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
               Features
             </h1>
           </div>
@@ -249,9 +249,9 @@ export default function Home({ placeholder }) {
           <About />
         </section>
         <section className='pt-2 lg:pt-8 items-center'>
-          <h2 className='text-2xl md:text-4xl text-gray-500 font-semibold pb-5 items-center text-center'>
+          <h1 className='text-2xl lg:text-3xl xl:text-4xl text-gray-500 font-semibold pb-5 items-center text-center'>
             Team Members
-          </h2>
+          </h1>
           <div className='flex space-x-3 overflow-scroll scrollbar-hide p-10 ml-4'>
             {authors.map(
               ({ id, first_name, last_name, profile_pic, designation }) => (
