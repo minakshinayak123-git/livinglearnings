@@ -7,6 +7,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Team from '../components/Team'
 import Contact from '../components/Contact'
+import Services from '../components/Services'
+import Products from '../components/Products'
 
 const products = [
   {
@@ -87,7 +89,7 @@ const authors = [
     first_name: 'Kartik',
     last_name: 'Mulgund',
     profile_pic:
-      'https://res.cloudinary.com/minakshi-nayak/image/upload/v1630071587/KartikMulgund_lbnz09_ntoiaw.png',
+      'https://res.cloudinary.com/minakshi-nayak/image/upload/v1630071587/avatar_azszsg_jk2ox1.png',
   },
   {
     id: 2,
@@ -95,7 +97,7 @@ const authors = [
     first_name: 'Prasad',
     last_name: 'Mulgund',
     profile_pic:
-      'https://res.cloudinary.com/minakshi-nayak/image/upload/v1630071587/PrasadParab_zwtquo_aakv4x.jpg',
+      'https://res.cloudinary.com/minakshi-nayak/image/upload/v1630071587/avatar_azszsg_jk2ox1.png',
   },
   {
     id: 3,
@@ -136,84 +138,15 @@ export default function Home({ placeholder }) {
       <Banner videoURL={videoURL} />
       <main className='max-width-7xl mx-auto px-2 md:px-8 cursor-pointer bg-white shadow-lg md:shadow-2xl'>
         <section className='pt-6'>
-          <div className='flex flex-col items-center text-center hover:scale-95 transform transition duration:300 easy-in-out'>
+          <div className='flex flex-col items-center text-center  hover:scale-95 transform transition duration:300 easy-in-out'>
             <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800'>
               Products
             </h1>
           </div>
-          <div className='grid grid-cols-1 md:grid-cols-2 mx-auto'>
-            <div className='flex flex-col pl-6 lg:pl-8 mb-10'>
-              <div className='relative flex items-center px-16 h-20 lg:h-40 cursor-pointer text-sm ml-10 hover:scale-95 transform transition duration:300 easy-in-out'>
-                <Image
-                  src='https://res.cloudinary.com/minakshi-nayak/image/upload/v1633106783/medSchool_pvztrt.jpg'
-                  layout='fill'
-                  objectFit='contain'
-                  objectPosition='left'
-                />
-              </div>
-              <div className='flex flex-col items-start  p-6 flex-shrink'>
-                <h2 className='text-md md:text-lg lg:text-xl  font-semibold lg:font-bold rounded-lg text-blue-600'>
-                  Surgery Basics
-                </h2>
-              </div>
-
-              <div className='flex flex-col items-start px-6 flex-shrink'>
-                {products.map((data) => (
-                  <div
-                    className='flex items-start justify-end text-gray-400 pb-2'
-                    key={data.id}
-                  >
-                    <div className='flex-1'>{data.message}</div>
-                  </div>
-                ))}
-              </div>
-              <div className='relative ml-10 lg:ml-80 h-20 lg:h-30 cursor-pointer text-sm'>
-                <Image
-                  src='https://res.cloudinary.com/minakshi-nayak/image/upload/v1633191355/en_badge_web_generic_veaw0u.png'
-                  layout='fill'
-                  objectFit='contain'
-                  objectPosition='left'
-                />
-              </div>
-            </div>
-            <div className='flex flex-col pl-6 lg:pl-8 mb-20'>
-              <div className='relative flex items-center px-16 h-20 lg:h-40 cursor-pointer text-sm ml-10 hover:scale-95 transform transition duration:300 easy-in-out'>
-                <Image
-                  src='https://res.cloudinary.com/minakshi-nayak/image/upload/v1633106799/4dMedical_v60byq.jpg'
-                  layout='fill'
-                  objectFit='contain'
-                  objectPosition='left'
-                />
-              </div>
-              <div className='flex flex-col items-start  p-6 flex-shrink'>
-                <h2 className='text-md md:text-lg lg:text-xl  font-semibold lg:font-bold rounded-lg text-blue-600'>
-                  4D Medical
-                </h2>
-              </div>
-
-              <div className='flex flex-col items-start  px-6 flex-shrink'>
-                {medical.map((data) => (
-                  <div
-                    className='flex items-start justify-end text-gray-400 pb-2'
-                    key={data.id}
-                  >
-                    <div className='flex-1'>{data.message}</div>
-                  </div>
-                ))}
-              </div>
-              <div className='relative ml-10 lg:ml-80 h-20 lg:h-30cursor-pointer text-sm'>
-                <Image
-                  src='https://res.cloudinary.com/minakshi-nayak/image/upload/v1633191355/en_badge_web_generic_veaw0u.png'
-                  layout='fill'
-                  objectFit='contain'
-                  objectPosition='left'
-                />
-              </div>
-            </div>
-          </div>
+          <Products products={products} medical={medical} />
         </section>
         <section className='pt-4 bg-[#f5f8fd] rounded-md hover:scale-103 transform transition duration:300 easy-in-out '>
-          <div className='flex flex-col items-center text-center bg-[f5f5f5] mb-8 '>
+          {/* <div className='flex flex-col items-center text-center bg-[f5f5f5] mb-8 '>
             <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
               Services
             </h1>
@@ -233,9 +166,10 @@ export default function Home({ placeholder }) {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
+          <Services services={services} />
         </section>
-        <section className='pt-4rounded-md hover:scale-103 transform transition duration:300 easy-in-out '>
+        <section className='pt-4'>
           <div className='flex flex-col items-center text-center mb-4 lg:mb-8'>
             <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
               Features
@@ -245,14 +179,14 @@ export default function Home({ placeholder }) {
             <Features key={id} title={title} image={image} />
           ))}
         </section>
-        <section className='pt-2 lg:pt-6'>
+        <section>
           <About />
         </section>
-        <section className='pt-2 lg:pt-8 items-center'>
+        <section className='items-center'>
           <h1 className='text-2xl lg:text-3xl xl:text-4xl text-gray-500 font-semibold pb-5 items-center text-center'>
             Team Members
           </h1>
-          <div className='flex space-x-3 overflow-scroll scrollbar-hide p-10 ml-4'>
+          <div className='flex space-x-3 overflow-scroll scrollbar-hide p-10'>
             {authors.map(
               ({ id, first_name, last_name, profile_pic, designation }) => (
                 <Team
@@ -260,7 +194,6 @@ export default function Home({ placeholder }) {
                   profile_pic={profile_pic}
                   first_name={first_name}
                   last_name={last_name}
-                  designation={designation}
                 />
               )
             )}
