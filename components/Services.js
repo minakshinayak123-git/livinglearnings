@@ -7,7 +7,10 @@ const Services = ({ services }) => {
         </h1>
       </div>
       {services.map(({ id, title, message }) => (
-        <div key={id} className='grid grid-cols-2 mx-auto border-b-2 pb-4 pt-4'>
+        <div
+          key={id}
+          className='grid grid-cols-2 mx-auto border-b-2 pb-4 pt-4 last:border-none'
+        >
           {/* <div className='flex flex-col pl-6 lg:pl-8 mb-10' key={id}>
             <div className='flex'> */}
           <h3 className='font-bold text-md text-left'>{title}</h3>

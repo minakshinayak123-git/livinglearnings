@@ -42,10 +42,10 @@ const Contact = ({ placeholder }) => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder={placeholder || 'Your Message'}
-              className='flex-grow py-6 px-8 rounded-md shadow-md outline-none text-sm text-gray-400 placeholder-gray-400'
+              className='py-6 px-10 rounded-md shadow-md outline-none text-sm text-gray-400 placeholder-gray-400'
             />
 
-            <button className='flex-grow text-sm text-white bg-blue-700 px-10 py-3  font-semibold rounded-lg mt-5'>
+            <button className='flex-grow text-sm text-white bg-blue-700 px-10 py-3 font-semibold rounded-lg mt-6'>
               Send Message
             </button>
           </div>
