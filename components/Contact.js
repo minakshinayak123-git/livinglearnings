@@ -10,8 +10,8 @@ const Contact = ({ placeholder }) => {
       <h1 className='text-2xl lg:text-3xl xl:text-4xl font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-blue-800 mt-4'>
         Contact
       </h1>
-      <div className='flex flex-col flex-wrap mx-auto'>
-        <div className='flex flex-col justify-items-center text-center pl-6 lg:pl-8 mb-10 bg-[#f5f5f5] shadow-lg rounded-md mx-10 py-10 pr-6 hover:scale-103 transform transition duration:300 easy-in-out'>
+      <div className='flex flex-col'>
+        <div className='flex flex-col justify-items-center text-center pl-4 lg:pl-6 mb-10 bg-[#f5f5f5] shadow-lg rounded-md mx-10 py-10 pr-6 hover:scale-103 transform transition duration:300 easy-in-out'>
           <h3 className='text-lg font-semibold lg:font-bold pb-6  mb-4 rounded-lg text-gray-500'>
             Send us a message
           </h3>
